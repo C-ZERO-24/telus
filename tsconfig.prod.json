@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig",
+  "exclude": ["./src/**/*.spec.@(tsx|ts)", "./src/utils/test-utils"]
+}
