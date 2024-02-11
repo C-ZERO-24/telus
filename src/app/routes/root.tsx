@@ -9,5 +9,5 @@ export const loader = async () => {
 export default function Root() {
   const example = useLoaderData() as LoaderData<typeof loader>;
 
-  return <h1 className="m-4 text-2xl">{example}</h1>;
+  return <h1 className="m-4 text-heading-1">{example}</h1>;
 }
