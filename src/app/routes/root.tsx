@@ -1,13 +1,16 @@
-import { useLoaderData } from 'react-router-dom';
-import { LoaderData } from '~/types';
-import { getExample } from '~/api';
-
-export const loader = async () => {
-  return await getExample();
-};
+import { Container } from '~/lib/components';
+import { ProviderList } from '../components';
+import { ProviderBrowse } from '../components/ProviderBrowse';
 
 export default function Root() {
-  const example = useLoaderData() as LoaderData<typeof loader>;
-
-  return <h1 className="m-4 text-heading-1">{example}</h1>;
+  return (
+    <div className="h-full grid grid-rows-[200px_1fr]">
+      <Container center className="bg-neutral-0 border-b border-[#EAEBEB]">
+        <ProviderBrowse />
+      </Container>
+      <div className="bg-neutral-2 overflow-y-auto">
+        <ProviderList />
+      </div>
+    </div>
+  );
 }

@@ -1,19 +1,22 @@
 import { HttpHandler, HttpResponse, delay, http } from 'msw';
+import { PROVIDERS } from '../mockData';
 
 export const handlers: HttpHandler[] = [
-  http.get('/example', async () => {
+  http.get('/providers', async () => {
     await delay();
-    return HttpResponse.text('Hello world!');
+    return HttpResponse.json(PROVIDERS);
   }),
-  http.get('/example/:value', async ({ params }) => {
+  http.get('/provider/:id', async ({ params }) => {
     await delay();
 
-    if (!params.value) {
+    const provider = PROVIDERS.find(provider => provider.id === params.id);
+
+    if (!provider) {
       return new HttpResponse('Not found', {
         status: 404,
-        statusText: 'Post not found',
+        statusText: 'Provider not found',
       });
     }
-    return HttpResponse.text(`Hello world ${params.value}!`);
+    return HttpResponse.json(provider);
   }),
 ];

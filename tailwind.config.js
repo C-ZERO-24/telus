@@ -87,7 +87,7 @@ export default {
         {
           lineHeight: '115%',
           letterSpacing: '0.005em',
-          fontWeight: 'medium',
+          fontWeight: '500',
         },
       ],
       'subheading-4': [
@@ -95,7 +95,7 @@ export default {
         {
           lineHeight: '120%',
           letterSpacing: '0.005em',
-          fontWeight: 'medium',
+          fontWeight: '500',
         },
       ],
       'subheading-3': [
@@ -103,7 +103,7 @@ export default {
         {
           lineHeight: '120%',
           letterSpacing: '0.01em',
-          fontWeight: 'medium',
+          fontWeight: '500',
         },
       ],
       'subheading-2': [
@@ -111,7 +111,7 @@ export default {
         {
           lineHeight: '120%',
           letterSpacing: '0.01em',
-          fontWeight: 'medium',
+          fontWeight: '500',
         },
       ],
       'subheading-1': [
@@ -119,7 +119,7 @@ export default {
         {
           lineHeight: '120%',
           letterSpacing: '0.01em',
-          fontWeight: 'medium',
+          fontWeight: '500',
         },
       ],
       'body-6': [
@@ -127,7 +127,7 @@ export default {
         {
           lineHeight: '140%',
           letterSpacing: '0.005em',
-          fontWeight: 'regular',
+          fontWeight: 'normal',
         },
       ],
       'body-5': [
@@ -135,7 +135,7 @@ export default {
         {
           lineHeight: '140%',
           letterSpacing: '0.005em',
-          fontWeight: 'regular',
+          fontWeight: 'normal',
         },
       ],
       'body-4': [
@@ -143,7 +143,7 @@ export default {
         {
           lineHeight: '140%',
           letterSpacing: '0.005em',
-          fontWeight: 'regular',
+          fontWeight: 'normal',
         },
       ],
       'body-3': [
@@ -151,7 +151,7 @@ export default {
         {
           lineHeight: '140%',
           letterSpacing: '0.005em',
-          fontWeight: 'regular',
+          fontWeight: 'normal',
         },
       ],
       'body-2': [
@@ -159,7 +159,7 @@ export default {
         {
           lineHeight: '140%',
           letterSpacing: '0.01em',
-          fontWeight: 'regular',
+          fontWeight: 'normal',
         },
       ],
       'body-1': [
@@ -167,7 +167,39 @@ export default {
         {
           lineHeight: '125%',
           letterSpacing: '0.01em',
-          fontWeight: 'regular',
+          fontWeight: 'normal',
+        },
+      ],
+      'label-3': [
+        '0.875rem',
+        {
+          lineHeight: '120%',
+          letterSpacing: '0.01em',
+          fontWeight: '500',
+        },
+      ],
+      'input-3': [
+        '0.925rem',
+        {
+          lineHeight: '120%',
+          letterSpacing: '0.01em',
+          fontWeight: 'normal',
+        },
+      ],
+      'input-1': [
+        '0.75rem',
+        {
+          lineHeight: '120%',
+          letterSpacing: '0.02em',
+          fontWeight: 'normal',
+        },
+      ],
+      'badge-2': [
+        '0.75rem',
+        {
+          lineHeight: '110%',
+          letterSpacing: '0.02em',
+          fontWeight: '500',
         },
       ],
     },
