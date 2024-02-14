@@ -10,6 +10,7 @@ import {
 } from '~/lib/components';
 import { ProviderDetails } from '../components/ProviderDetails';
 import { CardSection } from '~/lib/components/Card/CardSection';
+import { useDocumentTitle } from '~/lib/hooks';
 
 export const loader = async ({ params }: { params: { slug: string } }) => {
   const provider = await getProvider(params.slug);
@@ -19,6 +20,8 @@ export const loader = async ({ params }: { params: { slug: string } }) => {
 
 const ProviderProfile = () => {
   const provider = useLoaderData() as Awaited<ReturnType<typeof loader>>;
+
+  useDocumentTitle(provider.name);
 
   return (
     <div className="bg-neutral-2 h-full pt-4">

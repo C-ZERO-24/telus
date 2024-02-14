@@ -1,8 +1,10 @@
 # Telus Heath - Find Providers
 
+[Tech Test link](https://github.com/AkiraMD/provider-directory-takehome)
+
 ## Description
 
-A CSR app built with React Typescript and the following technologies:
+A CSR app built with the following technologies:
 
 - React
 - Typescript
@@ -27,3 +29,4 @@ A CSR app built with React Typescript and the following technologies:
 1. Clone the repo
 2. Install dependencies `yarn`
 3. Run the app `yarn dev`
+4. Navigate to [http://localhost:8090/](http://localhost:8090/)

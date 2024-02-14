@@ -15,10 +15,10 @@ export const Container = ({
   return (
     <Element
       className={cn(
-        'grid',
-        centerX && 'justify-items-center',
+        'flex flex-col',
+        centerX && 'justify-center',
         centerY && 'items-center',
-        center && 'place-items-center',
+        center && 'justify-center items-center',
         className,
       )}
       {...props}
