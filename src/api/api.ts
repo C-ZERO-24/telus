@@ -2,7 +2,7 @@ import { HTTPErrror, TimeoutError } from './errors';
 import { RequestOptions } from './types';
 
 export class API {
-  static baseUrl = process.env.API_URL;
+  static baseUrl = 'http://localhost:8090';
   static headers: HeadersInit = {
     'Content-Type': 'application/json',
   };
