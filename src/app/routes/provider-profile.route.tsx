@@ -40,7 +40,7 @@ const ProviderProfile = () => {
             width={'100%'}
           />
         </div>
-        <Card className="gap-6 row-start-2">
+        <Card className="gap-6 row-start-2 p-8">
           <Card.Header>
             <Card.Heading as="h1" className="text-subheading-1">
               {provider.name}
@@ -58,7 +58,9 @@ const ProviderProfile = () => {
             <ProviderDetails />
           </Card.Section>
           <Card.Footer>
-            <Button fullWidth>Book with us</Button>
+            <Button variant={'primary'} size={'medium'} fullWidth>
+              Book with us
+            </Button>
           </Card.Footer>
         </Card>
       </main>

@@ -218,6 +218,30 @@ export default {
           fontWeight: '500',
         },
       ],
+      'button-3': [
+        '1rem',
+        {
+          lineHeight: '100%',
+          letterSpacing: '0.02em',
+          fontWeight: '500',
+        },
+      ],
+      'button-2': [
+        '0.875rem',
+        {
+          lineHeight: '100%',
+          letterSpacing: '0.02em',
+          fontWeight: '500',
+        },
+      ],
+      'button-1': [
+        '0.75rem',
+        {
+          lineHeight: '100%',
+          letterSpacing: '0.02em',
+          fontWeight: '500',
+        },
+      ],
     },
     extend: {},
   },

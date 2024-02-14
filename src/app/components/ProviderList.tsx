@@ -25,7 +25,7 @@ export const ProviderList = () => {
           <Card
             href={`/provider/${provider.slug}`}
             key={provider.id}
-            className="gap-3"
+            className="gap-3 p-3"
           >
             <Card.Header>
               <Card.Image

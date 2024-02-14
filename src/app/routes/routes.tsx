@@ -1,8 +1,8 @@
-import Providers from './Providers.route.tsx';
+import Providers from './providers.route.tsx';
 import ErrorPage from '../error-page.tsx';
 import ProviderProfile, {
   loader as ProviderLoader,
-} from './ProviderProfile.route.tsx';
+} from './provider-profile.route.tsx';
 
 export const routes = [
   {
