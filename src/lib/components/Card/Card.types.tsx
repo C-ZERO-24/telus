@@ -29,3 +29,13 @@ export type LinkableCardProps = {
   href: CardProps['href'];
   children: CardProps['children'];
 };
+
+export type CardBodyProps = {
+  children: React.ReactNode;
+  as?: 'div' | 'section' | 'article';
+  divider?: boolean;
+} & React.HTMLAttributes<HTMLDivElement | HTMLSelectElement>;
+
+export type CardFooterProps = {
+  children: React.ReactNode;
+};

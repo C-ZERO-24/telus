@@ -6,3 +6,8 @@ export * from './Card';
 export * from './Tag';
 export * from './icons';
 export * from './Link';
+export * from './Breadcrumb';
+export * from './Image';
+export * from './ExpandableText';
+export * from './Button';
+export * from './Spinner';

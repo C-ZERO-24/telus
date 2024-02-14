@@ -1,11 +1,11 @@
 import { Text } from '../Text';
 import { CardTextProps } from './Card.types';
 
-export const CardText = ({ children, ...props }: CardTextProps) => {
+export const CardText = ({ children, className, ...props }: CardTextProps) => {
   return (
     <Text
       as="p"
-      className={'text-neutral-7 text-body-3 line-clamp-2'}
+      className={'text-neutral-7 whitespace-pre-wrap text-body-3 ' + className}
       {...props}
     >
       {children}

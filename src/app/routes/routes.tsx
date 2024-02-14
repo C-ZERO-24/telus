@@ -1,11 +1,20 @@
-import Root from './root.tsx';
+import Providers from './Providers.route.tsx';
 import ErrorPage from '../error-page.tsx';
+import ProviderProfile, {
+  loader as ProviderLoader,
+} from './ProviderProfile.route.tsx';
 
 export const routes = [
   {
     path: '/',
-    element: <Root />,
+    element: <Providers />,
     errorElement: <ErrorPage />,
     children: [],
+  },
+  {
+    path: '/provider/:slug',
+    element: <ProviderProfile />,
+    loader: ProviderLoader,
+    errorElement: <ErrorPage />,
   },
 ];

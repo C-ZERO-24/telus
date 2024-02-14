@@ -6,10 +6,10 @@ export const handlers: HttpHandler[] = [
     await delay();
     return HttpResponse.json(PROVIDERS);
   }),
-  http.get('/provider/:id', async ({ params }) => {
+  http.get('/provider/:slug', async ({ params }) => {
     await delay();
 
-    const provider = PROVIDERS.find(provider => provider.id === params.id);
+    const provider = PROVIDERS.find(provider => provider.slug === params.slug);
 
     if (!provider) {
       return new HttpResponse('Not found', {

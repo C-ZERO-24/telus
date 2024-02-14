@@ -1,8 +1,12 @@
 import { useProviders } from '~/api';
-import { Card, Container, Heading, Tag, Text } from '~/lib/components';
+import { Card, Container, Heading, Spinner, Tag, Text } from '~/lib/components';
 
 export const ProviderList = () => {
-  const { data: providers } = useProviders();
+  const { data: providers, isLoading } = useProviders();
+
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   return (
     <Container
@@ -18,7 +22,11 @@ export const ProviderList = () => {
 
       {providers?.map(provider => {
         return (
-          <Card href="#" key={provider.id} className="gap-3">
+          <Card
+            href={`/provider/${provider.slug}`}
+            key={provider.id}
+            className="gap-3"
+          >
             <Card.Header>
               <Card.Image
                 src={provider.profileImgSrc}
@@ -28,9 +36,11 @@ export const ProviderList = () => {
               <Card.Heading as="h3" className="text-subheading-1">
                 {provider.name}
               </Card.Heading>
-              <Card.Subheading>{provider.occupation}</Card.Subheading>
+              <Card.Subheading className="text-input-1 -mt-1">
+                {provider.occupation}
+              </Card.Subheading>
             </Card.Header>
-            <Card.Text>{provider.bio}</Card.Text>
+            <Card.Text className="line-clamp-2">{provider.bio}</Card.Text>
             <Tag variant={'ghost'} size={'1'}>
               {provider.status}
             </Tag>

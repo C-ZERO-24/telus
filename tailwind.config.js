@@ -170,6 +170,14 @@ export default {
           fontWeight: 'normal',
         },
       ],
+      'label-4': [
+        '0.925rem',
+        {
+          lineHeight: '120%',
+          letterSpacing: '0.05em',
+          fontWeight: '500',
+        },
+      ],
       'label-3': [
         '0.875rem',
         {
@@ -198,6 +206,14 @@ export default {
         '0.75rem',
         {
           lineHeight: '110%',
+          letterSpacing: '0.02em',
+          fontWeight: '500',
+        },
+      ],
+      'button-4': [
+        '1.125rem',
+        {
+          lineHeight: '100%',
           letterSpacing: '0.02em',
           fontWeight: '500',
         },
